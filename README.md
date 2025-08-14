@@ -1,5 +1,5 @@
 # On the Reliability of Vision-Language Models Under Adversarial Frequency-Domain Perturbations
-![safety_without_semantic_disruptions](https://github.com/JJ-Vice/Adversarial-Spatial-Perturbations-For-VLMs/blob/main/high-level-fig_V3.png)
+![high level figure](https://github.com/JJ-Vice/Adversarial-Spatial-Perturbations-For-VLMs/blob/main/github_images/high-level-fig_V3.png)
 
 We explore how VLM outputs are influenced by changes in frequency domain features across two tasks: (i) authenticity detection and (ii) automated image captioning. Querying VLMs with unperturbed images (synthetic or real) may result in $P_r(I)$ prediction in-line with the ground truth (e.g. $P_r(I) = \frac{4}{10}$). However, subtle spatial frequency perturbations can induce unreliable VLM behavior, shifting the VLM output across the decision boundary ($P_r(I)=\frac{4 \rightarrow 8}{10}$).Likewise, perturbations are also applied to manipulate the quality of VLM-generated captions.
 
@@ -34,7 +34,7 @@ We expose the reliability concerns in VLMs across two tasks:
 
 We demonstrate the viability of our approach across BLIP and Qwen-based VLMs, providing necessary code books for each. We do not recommend adjusting the perturbation strength beyond a perceptible threshold. We purposefully constrain our perturbation severity such that **visual changes in adversarial images are imperceptible**. We provide a zoomed in example of this in the figure below - where the magnified area is a 600% magnification. Original images show that there are clearly no human-perceptible artifacts in the images
 
-![safety_without_semantic_disruptions](https://github.com/JJ-Vice/Adversarial-Spatial-Perturbations-For-VLMs/blob/main/zoomed_in_perturbation_fig.png)
+![magnified perturbations](https://github.com/JJ-Vice/Adversarial-Spatial-Perturbations-For-VLMs/blob/main/github_images/zoomed_in_perturbation_fig.png)
 
 
 
@@ -42,6 +42,9 @@ We demonstrate the viability of our approach across BLIP and Qwen-based VLMs, pr
 As part of this research, the Real, Generated and Frequency-perturbed image dataset has also been released on IEEE Dataport. The dataset is accessible via: https://ieee-dataport.org/documents/rgfreq-dataset
 
 The RGFreq dataset contains aligned sets of real, generated, and frequency-perturbed images designed to support research in multimodal robustness, particularly in the context of vision language model (VLM) inference tasks. The dataset is curated to benchmark models under realistic and adversarial conditions, enabling the study of how structured spectral modifications affect image-text alignment, caption generation, and DeepFake detection performance. Researchers and practitioners can use this dataset to evaluate the resilience of VLMs, develop robust captioning systems, and enhance image generation pipelines
+
+![RGFreq dataset example](https://github.com/JJ-Vice/Adversarial-Spatial-Perturbations-For-VLMs/blob/main/github_images/RGFreq_Dataset.png)
+
 
 ## Citation
 If our code, metrics or paper are used to further your research, please cite our paper:
