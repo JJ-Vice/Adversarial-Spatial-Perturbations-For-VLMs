@@ -32,7 +32,8 @@ We expose the reliability concerns in VLMs across two tasks:
 1. Image Realism / DeepFake Detection, accessible via **Fooling_VLMS_Realness_<MODEL>.ipynb** notebooks
 2. Automated Image Captioning, accessible via **Fooling_VLMS_Captioning_<MODEL>.ipynb** notebooks
 
-We demonstrate the viability of our approach across BLIP and Qwen-based VLMs, providing necessary code books for each. We do not recommend adjusting the perturbation strength beyond a perceptible threshold. We purposefully constrain our perturbation severity such that **visual changes in adversarial images are imperceptible**. We provide a zoomed in example of this in the figure below.
+We demonstrate the viability of our approach across BLIP and Qwen-based VLMs, providing necessary code books for each. We do not recommend adjusting the perturbation strength beyond a perceptible threshold. We purposefully constrain our perturbation severity such that **visual changes in adversarial images are imperceptible**. We provide a zoomed in example of this in the figure below - where the magnified area is a 600% magnification. Original images show that there are clearly no human-perceptible artifacts in the images
+
 ![safety_without_semantic_disruptions](https://github.com/JJ-Vice/Adversarial-Spatial-Perturbations-For-VLMs/blob/main/zoomed_in_perturbation_fig.png)
 
 
