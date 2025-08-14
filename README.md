@@ -38,6 +38,11 @@ We demonstrate the viability of our approach across BLIP and Qwen-based VLMs, pr
 
 
 
+## 🗂️ RGFreq Dataset
+As part of this research, the Real, Generated and Frequency-perturbed image dataset has also been released on IEEE Dataport. The dataset is accessible via: https://ieee-dataport.org/documents/rgfreq-dataset
+
+The RGFreq dataset contains aligned sets of real, generated, and frequency-perturbed images designed to support research in multimodal robustness, particularly in the context of vision language model (VLM) inference tasks. The dataset is curated to benchmark models under realistic and adversarial conditions, enabling the study of how structured spectral modifications affect image-text alignment, caption generation, and DeepFake detection performance. Researchers and practitioners can use this dataset to evaluate the resilience of VLMs, develop robust captioning systems, and enhance image generation pipelines
+
 ## Citation
 If our code, metrics or paper are used to further your research, please cite our paper:
 ```BibTeX
@@ -51,5 +56,4 @@ If our code, metrics or paper are used to further your research, please cite our
       url={https://arxiv.org/abs/2507.22398}, 
 }
 ```
-
 If you have any questions/queries or if you want to simply strike a conversation, please reach out to Jordan Vice at: jordan.vice@uwa.edu.au or raise an issue in the [Issues tab](https://github.com/JJ-Vice/Adversarial-Spatial-Perturbations-For-VLMs/issues)
